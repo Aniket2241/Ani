@@ -1,0 +1,22 @@
+#include <iostream>
+
+using namespace std;
+void reverse(int a[],int n){
+    cout<<"Reverse is: ";
+    int b[7];
+    
+    for(int i=0;i<n;i++){
+        b[6-i]=a[i];        //STORING elements of Array A in B(Elements of A are accessed in ascending order and stored in B in descending order.
+    }
+      for(int j=0;j<n;j++){
+          cout<<" "<<b[j];
+          
+      }
+}
+int main()
+{
+   int a[7]={1,2,3,4,5,6,7};
+   reverse(a,7);  // calling function
+
+    return 0;
+}
